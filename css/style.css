@@ -4527,13 +4527,8 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand {
-  display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4836,9 +4831,6 @@ input[type="button"].btn-block {
   display: none;
 }
 
-.navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
-}
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
@@ -4882,9 +4874,6 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-dark .navbar-brand {
-  color: #fff;
-}
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
   color: #fff;
@@ -10637,12 +10626,12 @@ a.text-dark:focus {
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background: #f5f2ea;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
   color: gray;
 }
+
 body.menu-show {
   overflow: hidden;
   position: fixed;
@@ -10697,19 +10686,6 @@ h5,
     position: relative;
     top: 0;
     padding: 10px 15px;
-  }
-}
-.ftco-navbar-light .navbar-brand {
-  color: #fff;
-  z-index: 0;
-}
-.ftco-navbar-light .navbar-brand:hover,
-.ftco-navbar-light .navbar-brand:focus {
-  color: #fff;
-}
-@media (max-width: 991.98px) {
-  .ftco-navbar-light .navbar-brand {
-    color: #fff;
   }
 }
 @media (max-width: 991.98px) {
@@ -10888,32 +10864,11 @@ h5,
   -o-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
 }
-.ftco-navbar-light.scrolled .navbar-brand {
-  color: #000000;
-}
-.ftco-navbar-light.scrolled .navbar-brand span {
-  color: #bf925b;
-}
 
 .navbar-brand {
-  font-size: 24px;
-  font-weight: 700;
   position: relative;
   z-index: 0;
-  padding-left: 54px;
 }
-.navbar-brand span {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  font-size: 50px;
-  color: #fff;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  line-height: 0;
-}
-
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
@@ -11232,7 +11187,7 @@ h3.vr {
   right: 0;
   bottom: 0;
   content: "";
-  background: #bf925b;
+  background: black;
   opacity: 0;
   z-index: 1;
   -moz-transition: all 0.3s ease;
@@ -12130,7 +12085,7 @@ textarea.form-control {
 
 .testimony-section {
   position: relative;
-  background: #bf925b;
+  padding: 50px;
 }
 .testimony-section .testimony-img {
   display: block;
@@ -12147,7 +12102,6 @@ textarea.form-control {
   bottom: 0;
   content: "";
   opacity: 0.7;
-  background: #232931;
 }
 .testimony-section .owl-carousel {
   margin: 0;

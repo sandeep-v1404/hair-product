@@ -363,3 +363,16 @@ function openUrl(url) {
 	$('html, body').stop().animate({ scrollTop: $(url).offset().top }, 1500);
 	closeNav();
 }
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline()
+	.add({
+		targets: '.ml3 .letter',
+		opacity: [0, 1],
+		easing: "easeInOutQuad",
+		duration: 1000,
+		delay: (el, i) => 80 * (i + 1)
+	})
